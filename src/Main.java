@@ -35,18 +35,8 @@ public class Main {
 
         System.out.println("----------------\nTask  4");
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        int start = 0;
-        int end = reverseFullName.length - 1;
-
-        while  (start < end)  {
-            char temp = reverseFullName[start];
-            reverseFullName[start] = reverseFullName[end];
-            reverseFullName[end] = temp;
-            start++;
-            end--;
-        }
-        for (final char c   : reverseFullName)    {
-            System.out.print(c);
+        for (int i = reverseFullName.length; i > 0; i--)   {
+        System.out.print(reverseFullName[i-1]);
         }
     }
 }
